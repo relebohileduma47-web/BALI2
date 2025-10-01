@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bali in Pictures</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="gallery-page">
+  <header>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Bali in Pictures</h1>
+
+    <!-- Filter buttons -->
+    <div class="filter-buttons">
+      <button data-filter="all">Show All</button>
+      <button data-filter="beach">Beaches</button>
+      <button data-filter="mountain">Mountains</button>
+      <button data-filter="culture">Culture</button>
+    </div>
+
+    <!-- Gallery grid -->
+    <section class="gallery-grid">
+      <figure data-category="mountain">
+        <img src="sunrise trek.jpg" alt="Mount Batur Hike">
+        <figcaption>Mount Batur Sunrise Trek</figcaption>
+      </figure>
+      <figure data-category="culture">
+        <img src="dance bali.jpg" alt="Balinese Dance">
+        <figcaption>Traditional Balinese Dance</figcaption>
+      </figure>
+      <figure data-category="beach">
+        <img src="bali8.jpg" alt="Beach in Nusa Dua">
+        <figcaption>Beach in Nusa Dua</figcaption>
+      </figure>
+      <figure data-category="mountain">
+        <img src="terraces.jpg" alt="Ubud Rice Terraces">
+        <figcaption>Tegallalang Rice Terraces</figcaption>
+      </figure>
+      <figure data-category="culture">
+        <img src="tanah lot.jpg" alt="Sunset at Tanah Lot">
+        <figcaption>Sunset at Tanah Lot</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Explore Bali. All rights reserved.</p>
+  </footer>
+
+  <!-- Lightbox container -->
+  <div id="lightbox" class="lightbox" style="display:none;">
+    <span id="close-lightbox">&times;</span>
+    <img id="lightbox-img" src="" alt="">
+    <p id="lightbox-caption"></p>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Discover Bali</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="about-page">
+  <header>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Discover Bali</h1>
+
+    <!-- Dynamic info from JS object -->
+    <section id="destination-info"></section>
+
+    <!-- Show More / Show Less -->
+    <button id="toggle-btn">Show More</button>
+    <div id="extra-info" style="display:none;">
+      <p>Bali is also famous for its yoga retreats, vibrant festivals, and traditional Gamelan music.</p>
+      <p>Local markets overflow with colorful sarongs, handmade jewelry, and delicious street food.</p>
+    </div>
+
+    <!-- Fun fact section -->
+    <section class="fun-facts">
+      <h2>Fun Fact</h2>
+      <p id="random-fact"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Explore Bali. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

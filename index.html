@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to Bali!</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather&display=swap" rel="stylesheet">
+  
+  <!-- CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-page">
+  <header>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Dynamic welcome message -->
+    <h1 id="welcome-message">Welcome to Bali!</h1>
+
+    <!-- Background color button -->
+    <button id="color-btn">Change Background Color</button>
+
+    <!-- Slideshow -->
+    <section class="hero">
+      <div class="slideshow-container">
+        <img src="uluwatu.jpg" class="slide" alt="Uluwatu Sunset">
+        <img src="ricefields.jpg" class="slide" alt="Rice Terraces">
+        <img src="beach.jpg" class="slide" alt="Bali Beach">
+      </div>
+      <div class="slideshow-controls">
+        <button class="prev">❮ Prev</button>
+        <button class="next">Next ❯</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Explore Bali. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
